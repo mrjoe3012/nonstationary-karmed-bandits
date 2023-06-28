@@ -15,7 +15,7 @@ avg_optimal1, avg_optimal2 = IncrementalAverage(), IncrementalAverage() # percen
 max_avg_reward = IncrementalAverage() # keep track of optimal average reward
 sample_mean = Agent(k=k, epsilon=eps, step_size=None) # uses the sample mean as its action-value estimator
 fixed_step = Agent(k=k, epsilon=eps, step_size=alpha) # uses a weighted average as its action-value estimator
-# random.seed(0)
+random.seed(0)
 
 # data to plot at end
 data = {
